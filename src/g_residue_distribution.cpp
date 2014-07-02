@@ -133,7 +133,7 @@ void set_group_coord(int index_size, atom_id *index, t_topology *top, rvec *x, a
 int main(int argc, char *argv[]) {
 	  const char *desc[] = {
 			  "This program calculates the positions of center of masses of the selected",
-			  "groups along three coordinates. This tool is useful to calculate the position",
+			  "groups along X, Y and Z axes. This tool is useful to calculate the position",
 			  "of selected residues along the channel-axis of the protein channel. Further,",
 			  "output files could be use to obtain the distribution of residues' position",
 			  "during the MD simulations. If -fit is enabled, the molecule will be translated,",
