@@ -1,0 +1,19 @@
+# - Config file for the g_resid_distrib package
+# It defines the following variables
+#  g_resid_distrib_INCLUDE_DIRS - include directories for FooBar
+#  g_resid_distrib_LIBRARIES    - libraries to link against
+#  g_resid_distrib_EXECUTABLE   - the bar executable
+ 
+# Compute paths
+get_filename_component(g_resid_distrib_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+set(g_resid_distrib_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+  
+# Our library dependencies (contains definitions for IMPORTED targets)
+if(NOT TARGET gmxhole AND NOT g_resid_distrib_BINARY_DIR)
+    include("${g_resid_distrib_CMAKE_DIR}/g_resid_distribTargets.cmake")
+endif()
+	 
+# These are IMPORTED targets created by g_resid_distribTargets.cmake
+# set(g_resid_distrib_LIBRARIES gmxhole)
+set(g_resid_distrib_EXECUTABLE g_resid_distrib)
+
