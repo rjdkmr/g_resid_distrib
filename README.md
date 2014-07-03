@@ -30,7 +30,7 @@ make install
 </code></pre>
 
 Directory <code>/opt/gromacs</code> should contains <code>include</code> and <code> lib </code> directories. If these directories are in seprate locations, use followings:
-<pre><code>cmake ..  -DGMX_LIB=/path/to/lib -GMX_INCLUDE=/path/to/include -DCMAKE_INSTALL_PREFIX=/opt/gmxhole
+<pre><code>cmake ..  -DGMX_LIB=/path/to/lib -GMX_INCLUDE=/path/to/include -DCMAKE_INSTALL_PREFIX=/opt/g_resid_distrib
 </code></pre>
 
 If fftw library <code> libfftw3f.so or libfftw3f.a </code> are not present in standard locations:
